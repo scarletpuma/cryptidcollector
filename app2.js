@@ -1,4 +1,5 @@
 //objects
+totalSteps = 0;
 //pc info object
 const playerCharacter = {
   pcName: ``,

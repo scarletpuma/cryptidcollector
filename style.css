@@ -85,6 +85,15 @@ body {
 #options {
   flex-grow: 2;
 }
+#walk, #eat, #heal, #look {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  padding: 30px;
+  margin: 30px;
+  display: inline-block;
+  margin-top: 50%;
+}
 /* #titlescreen {
   font-family: 'Creepster', cursive;
   color: #fff;

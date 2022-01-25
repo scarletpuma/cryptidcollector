@@ -26,6 +26,14 @@ $(() => {
   const $hp = $(`#hp`).text(playerCharacter.hp);
   const $hunger = $(`#hunger`).text(playerCharacter.hunger);
   const $titleScreen = $(`#titlescreen`);
+  const $walk = $(`#walk`)
+  const $eat = $(`#eat`)
+  const $heal = $(`#heal`)
+  const $look = $(`#look`)
+
+  $walk.on('click', function () => {
+    
+  })
 
   // const $foodItem = $("<li>").text(food);
   // const $food = $(`#food`);
@@ -65,4 +73,5 @@ $(() => {
   // $narrative.hide().delay(9000).show()
   // $titleScreen.hide().fadeIn(3000).delay(3000).fadeOut(3000);
   $("body").css("background-image", `url(${getRandomImgURL()})`);
+
 });
