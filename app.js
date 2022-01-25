@@ -36,7 +36,8 @@ const possibleSurroundings = {
     `pink flower`,
     `black feather`,
     `big yellow button`,
-    `half of a blunt`
+    `half of a blunt`,
+    `rubix cube`
   ],
   health: [
     `aloe`,
