@@ -1,3 +1,1 @@
 # cryptidcollector
-
-## testing
