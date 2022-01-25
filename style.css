@@ -1,10 +1,16 @@
-/* font-family: 'Creepster', cursive;
-font-family: 'Dongle', sans-serif; */
+/* @font-family: 'Creepster', cursive;
+@font-family: 'Dongle', sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
 }
+
+ul {
+  list-style: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -14,15 +20,60 @@ body {
   width: 100vw;
   height: 100vh;
   color: white;
-  font-size: 2em;
+  font-size: 1.2em;
+  font-family: "Dongle", sans-serif;
 }
 #pcinfo {
   background-color: rgba(220, 220, 220, 0.5);
-  color: #000;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   border-bottom-left-radius: 30px 30px;
   border-bottom-right-radius: 30px 30px;
+  display: flex;
+  justify-content: space-around;
+  text-shadow: 1px 1px 1px black;
 }
+
+#hero-stats {
+  width: 30%;
+}
+
+#cryptids {
+  width: 70%;
+}
+
+#cryptids ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: center;
+}
+
+#pcname,
+#cryptid-title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#hero-stats {
+  text-align: center;
+}
+
+#pcinfo > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#items {
+  display: flex;
+  justify-content: space-around;
+}
+
+#cryptid-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
 #narrative {
   background-color: darkgray;
   opacity: 0.5;
