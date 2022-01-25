@@ -1,3 +1,5 @@
+//objects
+//pc info object
 const playerCharacter = {
   pcName: ``,
   health: 20,
@@ -10,6 +12,7 @@ const playerCharacter = {
   cryptids: [
   ]
 }
+//possibleSurroundings object
 const possibleSurroundings = {
   food: [
     `berries`,
@@ -90,6 +93,7 @@ const possibleSurroundings = {
     }
   ]
 }
+//cryptid info object
 const cryptids = [
     {
       name: `big foot`,

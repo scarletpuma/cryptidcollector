@@ -1,4 +1,5 @@
 $(() => {
+  //quert for html elements
   const $pcInfo = $(`#pcInfo`);
   const $options = $(`#options`);
   const $narrative = $(`#narrative`);
@@ -8,5 +9,5 @@ $(() => {
   const $food = $(`#food`);
   const $items = $(`#items`);
   const $cryptids = $(`#cryptids`);
-
+$name.text(`${pcName}`)
 })
