@@ -29,6 +29,26 @@ const getRandomImgURL = () => {
   const $items = $(`#items`);
   const $cryptids = $(`#cryptids`);
   const $titleScreen = $(`#titlescreen`);
+  const $foodItem = $("<li>").text(food);
+    $foodList.append($foodItem);
+  }
+  $food.append($foodList);
+
+  const $items = $(`#items`);
+  const $healthItemList = $("<ul>");
+  for (const healthItem of playerCharacter.items.healthItems) {
+    const $health = $("<li>").text(healthItem);
+    $healthItemList.append($health);
+  }
+  $items.append($healthItemList);
+
+  const $cryptids = $(`#cryptids`);
+
+  const $titleScreen = $(`#titlescreen`);
+
+  $titleScreen.fadein;
+
+  $("body").css("background-image", `url(${getRandomImgURL()})`);
   // $pcInfo.hide().delay(9000).show()
   // $options.hide().delay(9000).show()
   // $narrative.hide().delay(9000).show()
