@@ -13,10 +13,11 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  color: white;
+  font-size: 2em;
 }
 #pcinfo {
-  background-color: gray;
-  opacity: 0.5;
+  background-color: rgba(220, 220, 220, 0.5);
   color: #000;
   flex-grow: 1;
   border-bottom-left-radius: 30px 30px;
@@ -33,17 +34,13 @@ body {
 #options {
   flex-grow: 2;
 }
-/* #titlescreen {
-  display: none;
+#titlescreen {
   font-family: 'Creepster', cursive;
-  color: #000;
+  color: #fff;
   text-shadow: 1px 1px 1px #6B1411;
   font-size: 5em;
-  top:0;
   margin: 0 auto;
-  height:100%;
-  width:100%;
-  overflow: auto;
   z-index: 1;
   margin-top: 50%;
-} */
+  text-align: center;
+}
