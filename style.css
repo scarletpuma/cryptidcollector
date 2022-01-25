@@ -34,7 +34,7 @@ body {
 #options {
   flex-grow: 2;
 }
-#titlescreen {
+/* #titlescreen {
   font-family: 'Creepster', cursive;
   color: #fff;
   text-shadow: 1px 1px 1px #6B1411;
@@ -43,4 +43,4 @@ body {
   z-index: 1;
   margin-top: 50%;
   text-align: center;
-}
+} */

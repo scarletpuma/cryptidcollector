@@ -23,12 +23,10 @@ const getRandomImgURL = () => {
   const $options = $(`#options`);
   const $narrative = $(`#narrative`);
   const $name = $(`#pcname`);
-  const $health = $(`#health`);
+  const $hp = $(`#hp`);
   const $hunger = $(`#hunger`);
-  const $food = $(`#food`);
-  const $items = $(`#items`);
-  const $cryptids = $(`#cryptids`);
   const $titleScreen = $(`#titlescreen`);
+
   const $foodItem = $("<li>").text(food);
   const $food = $(`#food`);
   const $foodList = $("<ul>");
@@ -37,20 +35,37 @@ const getRandomImgURL = () => {
     $foodList.append($foodItem);
   }
   $food.append($foodList);
-  const $items = $(`#items`);
-  const $healthItemList = $("<ul>");
-  for (const healthItem of playerCharacter.items.healthItems) {
-    const $health = $("<li>").text(healthItem);
-    $healthItemList.append($health);
+
+  const $healthItem = $("<li>").text(health);
+  const $health = $(`#healthitems`);
+  const $healthList = $("<ul>");
+  for (const health of playerCharacter.items.healthItems) {
+    const $healthItem = $("<li>").text(health);
+    $healthList.append($healthItem);
   }
-  $items.append($healthItemList);
+  $health.append($healthList);
+
+  const $sentimentalItem = $("<li>").text(sentimental);
+  const $sentimental = $(`#sentimental`);
+  const $sentimentalList = $("<ul>");
+  for (const sentimental of playerCharacter.items.sentimentalItems) {
+    const $sentimentalItem = $("<li>").text(sentimental);
+    $sentimentalList.append($sentimentalItem);
+  }
+  $sentimental.append($sentimentalList);
+
+  const $cryptids = $("<li>").text(cryptid);
+  const $cryptid = $(`#cryptids`);
+  const $cryptidList = $("<ul>");
+  for (const cryptid of playerCharacter.cryptids) {
+    const $cryptids = $("<li>").text(cryptid);
+    $cryptidList.append($cryptid);
+  }
+  $cryptid.append($cryptidList);
+
   // $pcInfo.hide().delay(9000).show()
   // $options.hide().delay(9000).show()
   // $narrative.hide().delay(9000).show()
-  $titleScreen
-    .hide()
-    .fadeIn(3000)
-    .delay(3000)
-    .fadeOut(3000);
+  // $titleScreen.hide().fadeIn(3000).delay(3000).fadeOut(3000);
 $("body").css("background-image", `url(${getRandomImgURL()})`);
 });
